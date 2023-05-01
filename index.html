@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form onsubmit="return consoleLogFormData();">
+    <label for="ime">Ime i prezime:</label><br>
+    <input id="ime" type="text" name="ime" placeholder="ime i prezime"><br>
+
+    <label for="telefon">Telefonski broj:</label><br>
+    <input id="telefon" name="telefon" placeholder="npr. 000 111 222"><br>
+
+    <label for="adresa">Adresa stanovanja:</label><br>
+    <input id="adresa" type="text" name="adresa" placeholder="adresa"><br>
+
+    <label for="kucni broj">Kućni broj:</label><br>
+    <input id="kucni broj" type="text" name="kucni broj" placeholder="kućni broj"><br>
+
+    <label for="postanski broj">Poštanski broj:</label><br>
+    <input id="postanski broj" type="text" name="postanski broj" placeholder="poštanski broj"><br>
+
+    <label for="mjesto">Mjesto:</label><br>
+    <input id="mjesto" type="text" name="mjesto" placeholder="mjesto"><br>
+
+    <label for="email" >Email adresa:</label><br>
+    <input id="email" type="text" name="email adresa" placeholder="email adresa"><br>
+
+    <label for="napomene">Posebne napomene:</label><br>
+    <input id="napomene" type="text" name="napomene" placeholder="posebne napomene"><br>
+
+    <input type="submit" value="Naruči" onclick="validateForm()">
+  </form>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
