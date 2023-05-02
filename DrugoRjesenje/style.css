@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 30px 40px 10px 40px;
+    font-family: 'Barlow Condensed', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media screen and (max-width: 800px) {
+    body {
+      padding: 10px;
+    }
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  .form {
+    width: 500px;
+    min-width: 350px;
+  }
+
+  .group {
+    position: relative;
+    margin: 0px;
+  }
+  
+   .form-input {
+    color: grey;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid grey;
+    margin: 0px;
+  }
+  
+  .form-input:focus {
+    outline: none;
+  }
+  
+  .form-input:focus ~ .form-input-label {
+    top: -14px;
+    font-size: 13px;
+    color: black;
+  }
+  
+  .form-input-label {
+    color: grey;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 300ms ease 0s;
+  }
+  
+  .form-input-label.shrink {
+    top: -14px;
+    font-size: 13px;
+    color: black;
+  } 
+ 
+  button {
+    min-width: 135px;
+    width: auto;
+    height: 50px;
+    letter-spacing: 0.5px;
+    line-height: normal;
+    padding: 0 15px 0 15px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed";
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: normal;
+  }
+  
+  button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+
+  .add-color {
+    background-color:  rgb(232, 240, 254);
+}
+  
+
+ 

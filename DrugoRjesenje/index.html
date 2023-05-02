@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <form class="form" onsubmit="return consoleLogFormData();">
+    <div class="group">
+      <input class="form-input" id="ime" type="text" name="ime"  pattern="[a-zA-Z\s]+" required><br>
+      <label class="form-input-label" for="ime">Ime i prezime:</label><br>
+    </div>
+    
+    <div class="group">
+      <input class="form-input" id="telefon" name="telefon" pattern="(?=(.*\d){9})[0-9\s]+" required><br>
+      <label class="form-input-label" for="telefon">Telefonski broj:</label><br>
+    </div>
+    
+    <div class="group">
+      <input class="form-input" id="adresa" type="text" name="adresa" required><br>
+      <label class="form-input-label" for="adresa">Adresa stanovanja:</label><br>
+    </div>
+    
+    <div class="group">
+      <input class="form-input" id="kucni broj" type="text" name="kucni broj" required><br>
+      <label class="form-input-label" for="kucni broj">Kućni broj:</label><br>
+    </div>
+    
+    <div class="group">
+      <input class="form-input" id="postanski broj" type="text" name="postanski broj" required><br>
+      <label class="form-input-label" for="postanski broj">Poštanski broj:</label><br>
+    </div>
+    
+    <div class="group">
+      <input class="form-input" id="mjesto" type="text" name="mjesto" required><br>
+      <label class="form-input-label" for="mjesto">Mjesto:</label><br>
+    </div>
+    
+    <div class="group">
+      <input class="form-input" id="email" type="email" name="email adresa" required><br>
+      <label class="form-input-label" for="email" >Email adresa:</label><br>
+    </div>
+    
+    <div class="group">
+      <input class="form-input" id="napomene" type="text" name="napomene" required><br>
+      <label class="form-input-label" for="napomene">Posebne napomene:</label><br>
+    </div>
+    
+    <button type="submit">NARUČI</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
