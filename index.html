@@ -5,34 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Poiret+One&display=swap" rel="stylesheet">
 </head>
 <body>
-  <form onsubmit="return consoleLogFormData();">
-    <label for="ime">Ime i prezime:</label><br>
-    <input id="ime" type="text" name="ime" placeholder="ime i prezime"><br>
+  <form class="form" onsubmit="return consoleLogFormData();">
 
-    <label for="telefon">Telefonski broj:</label><br>
-    <input id="telefon" name="telefon" placeholder="npr. 000 111 222"><br>
+    <div class="group">
+      <input class="form-input" id="ime" type="text" name="ime"><br>
+      <label class="form-input-label" for="ime">Ime i prezime:</label><br>
+    </div>
 
-    <label for="adresa">Adresa stanovanja:</label><br>
-    <input id="adresa" type="text" name="adresa" placeholder="adresa"><br>
+    <div class="group">
+      <input class="form-input" id="telefon" name="telefon"><br>
+      <label class="form-input-label" for="telefon">Telefonski broj:</label><br>
+    </div>
 
-    <label for="kucni broj">Kućni broj:</label><br>
-    <input id="kucni broj" type="text" name="kucni broj" placeholder="kućni broj"><br>
+    <div class="group">
+      <input class="form-input" id="adresa" type="text" name="adresa"><br>
+      <label class="form-input-label" for="adresa">Adresa stanovanja:</label><br>
+    </div>
 
-    <label for="postanski broj">Poštanski broj:</label><br>
-    <input id="postanski broj" type="text" name="postanski broj" placeholder="poštanski broj"><br>
+    <div class="group">
+      <input class="form-input" id="kucni broj" type="text" name="kucni broj"><br>
+      <label class="form-input-label" for="kucni broj">Kućni broj:</label><br>
+    </div>
 
-    <label for="mjesto">Mjesto:</label><br>
-    <input id="mjesto" type="text" name="mjesto" placeholder="mjesto"><br>
+    <div class="group">
+      <input class="form-input" id="postanski broj" type="text" name="postanski broj"><br>
+      <label class="form-input-label" for="postanski broj">Poštanski broj:</label><br>
+    </div>
 
-    <label for="email" >Email adresa:</label><br>
-    <input id="email" type="text" name="email adresa" placeholder="email adresa"><br>
+    <div class="group">
+      <input class="form-input" id="mjesto" type="text" name="mjesto"><br>
+      <label class="form-input-label" for="mjesto">Mjesto:</label><br>
+    </div>
 
-    <label for="napomene">Posebne napomene:</label><br>
-    <input id="napomene" type="text" name="napomene" placeholder="posebne napomene"><br>
+    <div class="group">
+      <input class="form-input" id="email" type="text" name="email adresa"><br>
+      <label class="form-input-label" for="email" >Email adresa:</label><br>
+    </div>
 
-    <input type="submit" value="Naruči" onclick="validateForm()">
+    <div class="group">
+      <input class="form-input" id="napomene" type="text" name="napomene"><br>
+      <label class="form-input-label" for="napomene">Posebne napomene:</label><br>
+    </div>
+
+    <button type="submit" onclick="validateForm()">NARUČI</button>
   </form>
 
     <!-- Script -->
